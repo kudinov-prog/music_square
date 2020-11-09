@@ -1,6 +1,6 @@
 #users options
-static/
-posts/static/
+#static/
+#posts/static/
 media/
 .gitignore
 
