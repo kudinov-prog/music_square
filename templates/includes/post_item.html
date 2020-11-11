@@ -1,5 +1,14 @@
 <div class="card mb-3 mt-1 shadow-sm">
     
+    <!-- Отображение аудио -->
+    {% if post.content %}
+    <audio controls>
+        <source src="{{ post.content.url }}" type="audio/mpeg">
+        Тег audio не поддерживается вашим браузером. 
+        <a href="media/posts/audio.mp3">Скачайте музыку</a>.
+    </audio>
+    {% endif %}
+
     <!-- Отображение картинки -->
     {% load thumbnail %}
     {% thumbnail post.image "960x339" crop="center" upscale=True as im %}
