@@ -27,7 +27,10 @@ SECRET_KEY = '$_!2#7iddzce88sdm69^(7&mmb$7imjd)$x@0g$f#6j9m=al$m'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+        "130.193.45.150",
         "localhost",
+        "musicsquare.tk",
+        "www.musicsquare.tk",
         "127.0.0.1",
         "[::1]",
         "testserver",
