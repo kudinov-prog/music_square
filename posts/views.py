@@ -34,12 +34,12 @@ def index(request):
 
 def genre_posts(request, slug):
     genre = get_object_or_404(Genre, slug=slug)
-    post_list = group.posts.all()
+    post_list = genre.posts.all()
     paginator = Paginator(post_list, 10)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
     return render(request, "group.html",
-                  {"group": group, "page": page, "paginator": paginator})
+                  {"genre": genre, "page": page, "paginator": paginator})
 
 
 @login_required

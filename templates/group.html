@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Записи сообщества {{ group.title }}{% endblock %}
-{% block header %}{{ group.title }}{% endblock %}
+{% block title %}Записи сообщества {{ genre.title }}{% endblock %}
+{% block header %}{{ genre.title }}{% endblock %}
 
 {% block content %}
   <div class="container">
-    <h3>{{ group.description }}</h3>
+    <h3>{{ genre.description }}</h3>
       {% for post in page %}
       {% include 'includes/post_item.html' with page=page %}
       {% endfor %}
